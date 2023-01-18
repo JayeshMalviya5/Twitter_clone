@@ -1,0 +1,21 @@
+<html>
+  <body>
+    <textarea id="evaluatedText"></textarea>
+    <h3 id="wordCount"></h3>
+
+    <script>
+      var textbox = document.getElementById("evaluatedText");
+      var wordCount = document.getElementById("wordCount");
+
+      textbox.addEventListener("input", function() {
+        var count = this.value.split(" ").length;
+        wordCount.textContent = count || 0;
+      });
+    </script>
+  </body>
+</html>
+
+
+
+
+
